@@ -1,0 +1,24 @@
+<ons-page id="loginPage">
+    <ons-toolbar>
+        <div class="center">药店管理系统</div>
+        <div class="right">
+        <!-- Toolbar-button  only visible for iOS/other. -->
+        <ons-if platform="ios other">
+            <ons-toolbar-button component="button/new-task">New</ons-toolbar-button>
+        </ons-if>
+        </div>
+    </ons-toolbar>
+
+    <div style="text-align: center; margin-top: 30px;">
+        <p>
+            <ons-input type="text" placeholder="用户名/工号" modifier="underbar" id="username" float></ons-input>
+        </p>
+        <p>
+            <ons-input type="password" placeholder="密码" modifier="underbar" id="password" float></ons-input>
+        </p>
+        <p style="margin-top: 30px;">
+            <ons-button id="login">Sign in</ons-button>
+        </p>
+    </div>
+</ons-page>
+
